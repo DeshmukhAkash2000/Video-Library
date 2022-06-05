@@ -1,0 +1,63 @@
+.video-title{
+    color: white;
+    width: 25rem;
+    text-align: center;
+}
+
+.video-views{
+    color: white;
+    font-weight: bold;
+}
+
+.explore-main-container{
+    box-sizing: border-box;
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin-top: 3rem;
+    gap: 1.5rem;
+}
+
+.explore-card{
+    border: 2px solid #67e8f9;
+    width:25rem;
+    border-radius: 10px;
+}
+
+.explore-card:hover{
+    transform: scale(1.1);
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.explore-img{
+    width:25rem ;
+}
+
+.video-date{
+    color: white;
+    font-weight: bold;
+}
+
+.card-lower-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imga{
+    height: 2rem;
+    border-radius: 2rem;
+    border: 2px solid aqua;
+    margin-right: .5rem;
+}
+
+.channel-logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.explore-upper{
+    display: flex;
+}

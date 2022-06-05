@@ -1,0 +1,27 @@
+.sidebar-conatainer{
+    color: white;
+    line-height: 2rem;
+    width: 10rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    position: fixed;
+}
+
+.sidebar-txt-fafa{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+}
+
+.sidebar-txt-fafa:hover{
+    color: #67e8f9;
+    display: flex;
+}
+.fa{
+    font-size: 2rem;
+}
+
+a{
+    color: white;
+}

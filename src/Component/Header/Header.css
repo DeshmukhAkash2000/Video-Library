@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Candal&family=Monoton&family=Open+Sans&family=Oswald:wght@500&family=Sansita:ital@1&display=swap');
+.header-container{
+    background-color:#67e8f9;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+.header-text{
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.3rem;
+    margin-left: .8rem;
+    color: #171923 ;
+}
+
+.login-text{
+    border: 3px solid; 
+    padding: .3rem;
+    border-radius: 7px;
+    margin-right: 2rem;
+    height: 1.5rem;
+    margin-top: 2.3rem;
+    cursor: pointer;
+    color: #171923 ;
+    cursor: pointer;
+}
+.logo-text{
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.logo{
+    height: 4rem;
+}
+
+link{
+    text-decoration: none;
+}
