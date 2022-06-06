@@ -1,0 +1,60 @@
+.homepage-container{
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.home-image{
+    height: 17rem;
+    width: 25rem;
+}
+
+.home-image2{
+    height:17rem;
+    width: 25rem;
+}
+
+.home-image-upper-container, .home-image-lower-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+
+.home-image, .home-image2{
+    border: 3px solid #67e8f9;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.home-explore-btn{
+    padding: .5rem;
+    border: 3px solid;
+    background-color: inherit;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #67e8f9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.home-explore-btn:hover{
+    text-decoration: none;
+    color: purple;
+}
+
+.home-explore-btn:active{
+    text-decoration: underline;
+}
+
+.home-category-text{
+    color: #67e8f9;
+    cursor: pointer;
+}
+
+.home-img-txt-container:hover{
+    transform: scale(1.1);
+    transition: transform .5s;
+}
