@@ -18,6 +18,11 @@
     color: #67e8f9;
     display: flex;
 }
+
+.sidebar-txt-fafa:focus{
+    color:#67e8f9; 
+}
+
 .fa{
     font-size: 2rem;
 }

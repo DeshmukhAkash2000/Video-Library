@@ -29,7 +29,7 @@ export const Sidebar = () => {
 
 		  <div className='sidebar-txt-fafa'>
 		    <i class="fa fa-thumbs-up"></i>
-          <h3>Liked Videos</h3>
+          	<h3>Liked Videos</h3>
 		  </div>
 
         <div className='sidebar-txt-fafa'>
