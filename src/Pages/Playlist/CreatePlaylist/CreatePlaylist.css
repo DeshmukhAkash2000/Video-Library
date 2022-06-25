@@ -1,0 +1,38 @@
+
+.playlist-input{
+    padding: .5rem;
+}
+
+.playlist-btn-container{
+    display: flex;
+    justify-content: space-around;
+    width: 12rem;
+    margin-top: .5rem;
+}
+
+.playlist-main-container{
+    border: 2px solid white;
+    width: 14rem;
+    height: 15rem;
+    border-radius: 10px;
+}
+
+.playlist-main-container{
+    position: absolute;
+    top: 15rem;
+    left: 40%;
+    padding: 2rem;
+    background-color: #171923;
+    display: flex;
+    justify-content: center;
+}
+
+.playlist-name-text{
+    color: white;
+    border: 1px solid;
+    margin-top: .5rem;
+    text-align: center;
+    padding: .3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}

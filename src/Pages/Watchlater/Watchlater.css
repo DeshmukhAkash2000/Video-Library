@@ -1,0 +1,35 @@
+.watchlater-text{
+    color: white;
+}
+
+.main-watchlater-container{
+    display: grid;
+    grid-template-columns:10 1fr;
+} 
+
+.watchlater-pre-text{
+    text-align: center;
+    margin-top: 10rem;
+
+}
+
+.watchlater-explore-btn{
+    padding: .7rem;
+    color: white;
+    font-weight: bold;
+    background-color: inherit;
+    border: 1px solid aqua;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.remove-from-watchlater-btn{
+    padding: .7rem;
+    background-color: aqua;
+    font-weight: bold;
+    margin-top: 1.7rem;
+    text-align: center;
+    cursor: pointer;
+}
+

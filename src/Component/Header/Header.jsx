@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Header.css";
 import {Link} from 'react-router-dom'
+import { useAuth } from "../../Context/Auth-context"
 
 export const Header = () => {
+
+  const { status,setStatus} = useAuth()
+
+ 
+
+
   return (
     <div className='header-container'>
        <div className='logo-text'>
@@ -13,7 +20,16 @@ export const Header = () => {
             </div>
           </Link>
        </div>
-        <h3 className='login-text'>LogIn</h3>
+       {status ? (<div>
+          <h3 className="login-text" onClick={()=>setStatus(false)}>Logout</h3>
+       </div>)
+       :(
+        <Link to="/login">
+          <h3 className="login-text" >Login</h3>
+        </Link>
+       )
+       }
+      
     </div>
   )
 }

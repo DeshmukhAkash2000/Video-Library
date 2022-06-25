@@ -1,0 +1,38 @@
+.btn-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: fixed; 
+    background-color: #171923;
+    z-index: 1;
+    width: 100%;
+    padding: .7rem;
+    margin-top: -.2rem;
+}
+
+.category-btn{
+    padding: .8rem;
+    cursor: pointer;
+    background-color: #171923 ;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid aqua;
+    margin-top: 1rem;
+}
+
+.category-btn:hover{
+    background-color: aqua;
+    color: #171923;
+    font-weight: bold;
+}
+
+.category-btn:active{
+   text-decoration: underline;
+}
+
+.category-btn:focus{
+    background-color: aqua;
+    color: #171923;
+    font-weight: bold;
+}
