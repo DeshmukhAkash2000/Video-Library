@@ -1,0 +1,23 @@
+.playlistName{
+    color: white;
+    margin-top: -1rem;
+}
+
+.playlistName-container{
+    border: 2px solid aqua;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 3rem;
+    height: 1rem;
+    margin-left: 12rem;
+    margin-top: 4rem;
+    display: flex;
+}
+
+.remove-playlist-btn{
+    margin-top: 1rem;
+    background-color: aqua;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 12rem;
+}

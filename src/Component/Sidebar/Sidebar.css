@@ -3,8 +3,8 @@
     line-height: 2rem;
     width: 10rem;
     margin-left: 1rem;
-    margin-top: 1.5rem;
     position: fixed;
+    margin-top: 4.5rem;
 }
 
 .sidebar-txt-fafa{
@@ -30,3 +30,4 @@
 a{
     color: white;
 }
+

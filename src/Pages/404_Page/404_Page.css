@@ -1,0 +1,17 @@
+.error-text{
+    color: white;
+    text-align: center;
+}
+
+.error-main-container{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error-container{
+    border: 2px solid aqua;
+    padding: 3rem;
+    border-radius: 10px;
+
+}

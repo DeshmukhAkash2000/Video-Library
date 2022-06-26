@@ -15,9 +15,22 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: left;
+    margin-top: 6rem;
+    gap: 1.5rem;
+    margin-left: 12.3rem;
+}
+
+.history-explore-main-container{
+    box-sizing: border-box;
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
     margin-top: 3rem;
     gap: 1.5rem;
+    margin-left: 12.3rem;
 }
 
 .explore-card{
@@ -50,7 +63,7 @@
 .chName{
     height: 2rem;
     border-radius: 2rem;
-    border: 2px solid aqua;
+    border: 2px solid #67e8f9;
     margin-right: .5rem;
 }
 
@@ -62,3 +75,25 @@
 .explore-upper{
     display: flex;
 }
+
+
+.clear-history-btn-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+.clear-history-btn{
+    padding: .7rem;
+    border: 2px solid #67e8f9;
+    color: white;
+    font-weight: bold;
+    font-weight: bold;
+    background-color: inherit;
+    margin-top: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
