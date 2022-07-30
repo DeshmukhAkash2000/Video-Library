@@ -54,7 +54,20 @@
     font-weight: bold;
 }
 
+.sv-title-textsss{
+    font-weight: bold;
+    color: aqua;;
+}
+
 .playlist-text{
     color: white;
 }
 
+#likethumb{
+    color: aqua;
+}
+
+
+#watchlater-icon{
+    color: aqua;
+}

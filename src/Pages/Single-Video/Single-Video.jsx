@@ -7,10 +7,7 @@ import { Sidebar } from "../../Component/Sidebar/Sidebar";
 import { useWatchlater } from "../../Context/Watchlater-Context";
 import { CreatePlaylist } from "../Playlist/CreatePlaylist/CreatePlaylist";
 import { usePlaylist } from "../../Context/PlaylistContext";
-// import {  toast } from 'react-toastify';
-// import  ToastContainer from 'react-toastify';
 
-// import { Link } from "react-router-dom";
 
 const SingleVideo = () => {
   const { VideoId } = useParams();
@@ -39,19 +36,19 @@ const SingleVideo = () => {
           />
         </div>
 
-        <h3 className="sv-title-text">{playVideo.title}</h3>
+      <div>
+        <h3 className="sv-title-text" >{playVideo.title}</h3>
         <div className="asd">
           <p className="sv-views">{playVideo.views}</p>
           <p className="sv-date">{playVideo.date}</p>
 
           {likeVideo.some((data) => data.id === playVideo.id) ? (
-            <div div className="watch-later-section">
-              <i class="fa fa-thumbs-down"></i>
-              <p className="sv-title-texts" onClick={()=>dispatchWatchlater({type:"REMOVE_FROM_LIKE", payload:playVideo})}>Dislike</p>
+            <div div className="watch-later-section" onClick={()=>dispatchWatchlater({type:"REMOVE_FROM_LIKE", payload:playVideo})}>
+              <i id="likethumb" class="fa fa-thumbs-up"></i>
+              <p className="sv-title-textsss">Like</p>
             </div>
           ) : (
           <div className="like-video-section" onClick={() =>{
-            // toast.success("Added to Liked Video ")
                 dispatchWatchlater({
                   type: "ADD_TO_LIKE",
                   payload: playVideo,
@@ -60,24 +57,14 @@ const SingleVideo = () => {
             <i class="fa fa-thumbs-up"></i>
             <p className="sv-title-text">Like</p>
           </div>)}
-
-          {/* {playlists.some((data) => data.id === playVideo.id) ? (
-            <div div className="watch-later-section">
-              <i class="fa fa-check-square-o"></i>
-              <p className="sv-title-texts">Added to playlist</p>
-            </div>
-          ) :( */}
           <div className="add-to-playlist-section" onClick={()=>setStatus(true)}>
             <i className="fa fa-plus"></i>
             <p className="sv-title-texts" onClick={()=> setStatus(true)}>Add to Playlist</p>
           </div>
-
-
-
           {watchlater.some((data) => data.id === playVideo.id) ? (
-            <div div className="watch-later-section">
-              <i class="fa fa-remove"></i>
-              <p className="sv-title-texts" onClick={()=>dispatchWatchlater({type:"REMOVE_FROM_WATCHLATER", payload:playVideo})}>Remove From WatchLater</p>
+            <div onClick={()=>dispatchWatchlater({type:"REMOVE_FROM_WATCHLATER", payload:playVideo})} className="watch-later-section">
+              <i id="watchlater-icon" class="fa fa-compass"></i>
+              <p className="sv-title-textsss">Watchlater</p>
             </div>
           ) : (
             <div
@@ -89,14 +76,14 @@ const SingleVideo = () => {
               }
               className="watch-later-section"
             >
-              <i class="fa fa-spinner"></i>
-              <p className="sv-title-texts"> add Watch Later</p>
+              <i class="fa fa-compass"></i>
+              <p className="sv-title-texts">Watchlater</p>
             </div>
           )}
         </div>
 
 
-      <div className="channel-section">
+      <div onClick={()=>setStatus(false)} className="channel-section">
         <img className="sv-chan-img" src={playVideo.chaImg} alt="" />
         <h3 className="sv-channelName">{playVideo.chaName}</h3>
       </div>
@@ -107,6 +94,7 @@ const SingleVideo = () => {
           </span>
           {playVideo.description}
         </p>
+      </div>
       </div>
     </div>
       
